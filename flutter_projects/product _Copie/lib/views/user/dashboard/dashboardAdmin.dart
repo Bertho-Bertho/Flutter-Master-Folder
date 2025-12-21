@@ -19,7 +19,7 @@ class _DashboardAdminState extends State<DashboardAdmin> {
 
   final List<Widget> _adminPages = [
     const DashboardHome(),
-    const ProductDetailView(),
+    const ProductView(),
     const UserView(),
     const ProfileView(),
   ];

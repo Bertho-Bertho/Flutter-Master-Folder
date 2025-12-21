@@ -227,7 +227,7 @@ class _UserViewState extends State<UserView> {
         onPressed: () async {
           final result = await Navigator.push(
             context,
-            MaterialPageRoute(builder: (context) => const UserForm()),
+            MaterialPageRoute(builder: (context) => UserForm()),
           );
           if (result != null && result['success'] == true) _loadUsers();
         },

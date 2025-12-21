@@ -1,10 +1,10 @@
 class Product {
-  String id;
-  String sku;
-  String name;
-  String price;
-  String quantity;
-  String description;
+  final String id;
+  final String sku;
+  final String name;
+  final double price;
+  final int quantity;
+  final String? description;
 
   Product({
     required this.id,
@@ -27,14 +27,14 @@ class Product {
     };
   }
 
-  // Creatio d'une tache a  aprtir d'une Map
+  // Creation d'une tache a  aprtir d'une Map
   factory Product.fromMap(Map<String, dynamic> map) {
     return Product(
       id: map['id'],
       sku: map['sku'],
       name: map['name'],
-      price: map['price'],
-      quantity: map['quantity'],
+      price: (map['price'] as num).toDouble(),
+      quantity: (map['quantity'] as num).toInt(),
       description: map['description'],
     );
   }
@@ -44,8 +44,8 @@ class Product {
     String? id,
     String? sku,
     String? name,
-    String? price,
-    String? quantity,
+    double? price,
+    int? quantity,
     String? description,
   }) {
     return Product(

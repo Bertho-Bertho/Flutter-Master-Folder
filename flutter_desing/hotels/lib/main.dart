@@ -250,7 +250,7 @@ class HotelSection extends StatelessWidget {
     },
   ];
 
-  HotelSection({super.key});
+  HotelSection({super.key});  
   @override
   Widget build(BuildContext context) {
     return Container(

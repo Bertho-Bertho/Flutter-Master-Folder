@@ -62,7 +62,7 @@ class HomePage extends StatelessWidget {
 
 class MenuSection extends StatelessWidget {
   final List menuItems = ['Message', 'Online', 'Groups', 'calls'];
-  MenuSection({Key? key}) : super(key: key);
+  MenuSection({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -91,7 +91,7 @@ class MenuSection extends StatelessWidget {
 }
 
 class FavoriteSection extends StatelessWidget {
-  FavoriteSection({Key? key}) : super(key: key);
+  FavoriteSection({super.key});
 
   final List FavoriteContacts = [
     {'name': 'Alland', 'profile': 'assets/images/img1.jpg'},
@@ -187,7 +187,7 @@ class FavoriteSection extends StatelessWidget {
 }
 
 class MessageSection extends StatelessWidget {
-  MessageSection({Key? key}) : super(key: key);
+  MessageSection({super.key});
 
   final List message = [
     {

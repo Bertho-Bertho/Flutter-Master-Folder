@@ -6,6 +6,8 @@ import 'package:table_calendar/table_calendar.dart';
 const dGreen = Color(0xFF54D3C2);
 
 class CalendarPage extends StatefulWidget {
+  const CalendarPage({super.key});
+
   @override
   _CalendarPageState createState() => _CalendarPageState();
 }
@@ -117,7 +119,10 @@ class _CalendarPageState extends State<CalendarPage> {
 }
 
 class MyAppBar extends StatelessWidget implements PreferredSizeWidget {
-  Size get preferredSize => new Size.fromHeight(60.0);
+  const MyAppBar({super.key});
+
+  @override
+  Size get preferredSize => Size.fromHeight(60.0);
 
   @override
   Widget build(BuildContext context) {
